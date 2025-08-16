@@ -558,7 +558,7 @@ export default function QuietBrandsLanding() {
               <div className="space-y-2 text-gray-400">
                 <div className="flex items-center space-x-2">
                   <Mail className="h-4 w-4" />
-                  <span>hello@quietbrands.xyz</span>
+                  <span>contact@quietbrands.xyz</span>
                 </div>
               </div>
             </div>
