@@ -10,16 +10,13 @@ import {
   Users,
   Zap,
   CheckCircle,
-  Calendar,
   Lightbulb,
   Package,
   Rocket,
   TrendingUp,
   Star,
   Mail,
-  Phone,
   Instagram,
-  Twitter,
   Linkedin,
   ChevronLeft,
   ChevronRight,
@@ -160,7 +157,7 @@ export default function QuietBrandsLanding() {
                 size="lg"
                 className="bg-blue-600 hover:bg-blue-700 text-white px-8 py-4 text-lg font-semibold rounded-lg shadow-lg hover:shadow-xl transition-all duration-200"
               >
-                Book Your Free Strategy Call
+                Book Free Strategy Call
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
               <div className="flex items-center space-x-6 text-sm text-gray-500">
@@ -184,7 +181,9 @@ export default function QuietBrandsLanding() {
                 alt="Content creator success"
                 width={500}
                 height={600}
-                className="rounded-2xl shadow-2xl"
+                sizes="(max-width: 1024px) 100vw, 500px"
+                className="w-full h-auto rounded-2xl shadow-2xl"
+                priority={false}
               />
             </div>
           </div>
@@ -280,7 +279,7 @@ export default function QuietBrandsLanding() {
       </section>
 
       {/* How It Works Section */}
-      <section id="how-it-works" className="py-16 md:py-24">
+      <section id="how-it-works" className="py-16 md:py-24 scroll-mt-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">From Idea to Ownership in 4 Clear Steps</h2>
@@ -334,13 +333,12 @@ export default function QuietBrandsLanding() {
       </section>
 
       {/* Social Proof Section */}
-      <section id="testimonials" className="py-16 md:py-24 bg-gray-50">
+      <section id="testimonials" className="py-16 md:py-24 bg-gray-50 scroll-mt-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-8">Trusted by Top Creators</h2>
 
             {/* Testimonial */}
-            {/* Rotating Testimonial Cards */}
             <Card className="max-w-4xl mx-auto mb-12">
               <CardContent className="p-8">
                 <div className="flex items-center justify-center mb-4">
@@ -479,7 +477,7 @@ export default function QuietBrandsLanding() {
       </section>
 
       {/* FAQ Section */}
-      <section id="faq" className="py-16 md:py-24 bg-gray-50">
+      <section id="faq" className="py-16 md:py-24 bg-gray-50 scroll-mt-24">
         <div className="container mx-auto px-4">
           <div className="text-center mb-10 md:mb-16">
             <h2 className="text-3xl md:text-4xl font-bold text-gray-900 mb-4">
@@ -568,10 +566,10 @@ export default function QuietBrandsLanding() {
             <div>
               <h4 className="font-semibold mb-4">Follow Us</h4>
               <div className="flex space-x-4">
-                <Link href="https://www.instagram.com/quietbrands" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="https://www.instagram.com/quietbrands"  target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                   <Instagram className="h-6 w-6" />
                 </Link>
-                <Link href="https://www.linkedin.com/company/quitebrands" className="text-gray-400 hover:text-white transition-colors">
+                <Link href="https://www.linkedin.com/company/quitebrands" target="_blank" rel="noopener noreferrer" className="text-gray-400 hover:text-white transition-colors">
                   <Linkedin className="h-6 w-6" />
                 </Link>
               </div>
